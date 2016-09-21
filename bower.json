@@ -1,0 +1,17 @@
+{
+  "name": "galbani-sp-optimisation",
+  "description": "for galbani sp projects",
+  "main": "gulpfile.js",
+  "authors": [
+    "dymori <dymori@gmail.com>"
+  ],
+  "license": "0BSD",
+  "homepage": "https://github.com/styzprojects/galbani-sp-optimisation",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,58 @@
+extends ./partials/_layout
+block title
+  title= seeder
+block append meta
+  include ./partials/_inc_meta_facebook
+  include ./partials/_inc_meta_twitter
+block style
+
+block main
+  main.main
+    .section--bg--main.swiper-container.js-swiper-container
+      .swiper-wrapper.js-swiper-wrapper
+        .swiper-slide.js-swiper-slide.swiper-no-swiping
+          a(href="/m/r-tsushin/9.html")
+            img(src="/static/img/rt/09/img_banner_top_rt.jpg")
+
+    .section.section--bg--main
+      a(href="/m/r-tsushin/index.html" style="display: block;")
+        img(src="/static/img/rt/rt_sp_banner.jpg" alt="料理通信特集" style="display: block; width: 100%; height: auto;")
+
+    .section.section--bg--main
+      dl.dl.dl--top
+        dt.dt.dt--top
+          i.dt__icon.dt__icon--news
+          | 新着ニュース
+        dd.dd.dd--top
+          ul.dd__news
+            li.dd__news__item
+              p.dd__news__item__date 2016.09.06
+              a.dd__news__item__link(href="/m/news/2016/0906_01.html") 「料理通信 2016年10月号」にガルバーニ モッツァレラのタイアップ記事が掲載されました。
+            li.dd__news__item
+              p.dd__news__item__date 2016.08.29
+              a.dd__news__item__link(href="/recipe/index.html") ガルバーニのおすすめレシピを更新しました。
+              p.dd__news__to-pc
+                | PCサイトへ
+                img.dd__news__to-pc__icon(src="/static/img/icon/icon-pc.png")
+            li.dd__news__item
+              p.dd__news__item__date 2016.08.06
+              a.dd__news__item__link(href="/m/news/2016/0806_01.html") 「料理通信 2016年9月号」にガルバーニ リコッタのタイアップ記事が掲載されました。
+
+    include ./partials/_related_top
+
+    .section.section--bg--main
+      dl.dl.dl--top
+        dt.dt.dt--top
+          i.dt__icon.dt__icon--about
+          | ガルバーニについて
+        dd.dd.dd--top
+          ul.dd__about
+            li.dd__about__item
+              a.dd__about__item__link(href="/m/about_us/") ガルバーニブランドについて
+            li.dd__about__item
+              a.dd__about__item__link(href="/m/about_us/history/") ガルバーニの歴史
+            li.dd__about__item
+              a.dd__about__item__link(href="/m/about_us/quality/") 品質管理について
+
+block script
+  script(src='/static/js/top.js', charset='UTF-8')
