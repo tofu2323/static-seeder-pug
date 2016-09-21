@@ -42,7 +42,7 @@ module.exports = {
         styles: path.join(config.dest, 'static/css'),
         styles_vendors: path.join(config.dest, 'static/css/vendors'),
         images: path.join(config.dest, 'static/img'),
-        pug: path.join(config.dest, 'm/'),
+        pug: path.join(config.dest, '/'),
         data: path.join(config.dest, 'static/data'),
         fonts: path.join(config.dest, 'static/css/fonts/')
     },
